@@ -35,7 +35,9 @@ class App extends React.Component {
     );
   }
   edit() {
-
+      this.setState({
+        blog: this.state.blog.splice(index,1,this.state.value)
+      })
   }
   delete(index) {
     this.setState({ blog: this.state.blog.splice(index,1)
